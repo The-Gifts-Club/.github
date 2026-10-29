@@ -1,0 +1,17 @@
+name: Task
+description: Technical piece of work closed by one pull request
+type: Task
+projects: ["The-Gifts-Club/5"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What to do
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      placeholder: |
+        - [ ] ...

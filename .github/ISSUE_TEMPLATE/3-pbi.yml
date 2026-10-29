@@ -1,0 +1,37 @@
+name: PBI
+description: Product backlog item, the smallest slice of user value that fits in a sprint
+type: PBI
+projects: ["The-Gifts-Club/5"]
+body:
+  - type: textarea
+    id: story
+    attributes:
+      label: Story
+      value: |
+        As a <role>, I want <capability> so that <benefit>.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      placeholder: |
+        - [ ] ...
+    validations:
+      required: true
+  - type: dropdown
+    id: app
+    attributes:
+      label: App
+      multiple: true
+      options: [play, play-api, saas, saas-website, landing, services, loyalty, modules, infra]
+  - type: dropdown
+    id: size
+    attributes:
+      label: Size
+      description: "XS < half day, S ~1 day, M 2-3 days, L ~1 week, XL too big: split it"
+      options: [XS, S, M, L, XL]
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes and links

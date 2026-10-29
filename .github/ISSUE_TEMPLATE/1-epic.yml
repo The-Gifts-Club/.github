@@ -1,0 +1,22 @@
+name: Epic
+description: Large initiative grouping several features
+type: Epic
+projects: ["The-Gifts-Club/5"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What we want to achieve and why it matters.
+    validations:
+      required: true
+  - type: textarea
+    id: success
+    attributes:
+      label: Success criteria
+      description: How we will know it worked.
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What is in and out of scope.

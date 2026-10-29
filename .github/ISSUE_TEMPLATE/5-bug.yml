@@ -1,0 +1,45 @@
+name: Bug
+description: Something does not work as expected
+type: Bug
+projects: ["The-Gifts-Club/5"]
+body:
+  - type: markdown
+    attributes:
+      value: Do not paste secrets, tokens or customers' personal data. For a live production problem, open an incident first.
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happens
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should happen
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. ...
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options: [prod, staging, dev, local]
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Errors, request IDs, log links, screenshots.
+  - type: input
+    id: incident
+    attributes:
+      label: Related incident
+      placeholder: The-Gifts-Club/incidents#12
